@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: 0;
+    list-style: none;
 }
 
 a{
@@ -126,6 +127,54 @@ p{
     margin: 6%;
 }
 
-nav{
-    display: none;
+/*----- Nav----------------------*/
+
+input#menu-checkbox{
+	display:none;
+	}
+
+input#menu-checkbox:checked ~ nav#nav-buttons{
+    right:-10px;
+    }
+
+input#menu-checkbox:checked + label#mobile-button span{
+    background:url(../images/close_white_24dp.svg) no-repeat;
+    background-size: contain;
+    }
+
+label#mobile-button span{
+	cursor:pointer;
+    width: 38px;
+    height: 38px;
+    background: url(../images/menu_white_24dp.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+li a{
+    text-align: center;
+    display: block;
+    padding: 5%;
+}
+
+nav#nav-buttons{
+	position:absolute;
+	width:100vw;
+	height:100vh;
+	background:#181719;
+	right:-120%;
+	transition:right .5s;
+    z-index: 1;
+	}
+
+ul{
+    margin-top: 30vh;
+}
+
+.active{
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
