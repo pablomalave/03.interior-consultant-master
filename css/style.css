@@ -99,6 +99,7 @@ p{
 
 .main-example-author{
     width: 85%;
+    max-width: 410px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -177,4 +178,83 @@ ul{
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 10px;
+}
+
+/*---------------Media Queries--------------*/
+@media (min-width: 576px) {
+
+    a{
+        font-size: 1em; /*18px*/
+    }
+
+    h1{
+        font-size: 2.67em;/*48px*/
+    }
+
+    p{
+        font-size: 1.34em;/*24px*/
+    }
+
+    hgroup h1{
+        font-size: 0.78em;/*14px*/
+    }
+
+    hgroup h2{
+        font-size: 0.67em;/*12px*/
+    }
+
+    .main-example-author p{
+        font-size: 1.34em;/*14px*/
+    }
+
+    .main-example-author img{
+        width: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+
+
+    header{
+        align-items: center;
+    }
+    nav#nav-buttons{
+        position:static;
+        width:50vw;
+        height: max-content;
+        background:#181719;
+        transition: none;
+    }
+
+    ul{
+        margin-top: 0;
+    }
+
+    li{
+        float: left;
+        width: 25%;
+        text-align: center;
+    }
+    li a{
+        display: inline;
+    }
+
+
+    label#mobile-button span{
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+
+    main{
+        display: flex;
+    }
+}
+
+@media (min-width:1515px){
+    body{
+        width: 1440px;
+        margin: 19px auto;
+    }
 }
