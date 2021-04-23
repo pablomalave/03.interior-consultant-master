@@ -164,11 +164,14 @@ nav#nav-buttons{
 	position:absolute;
 	width:100vw;
 	height:100vh;
-	background:#181719;
 	right:-120%;
 	transition:right .5s;
     z-index: 1;
 	}
+
+.nav-color{
+    background-color:#181719;
+}
 
 ul{
     margin-top: 30vh;
@@ -178,6 +181,49 @@ ul{
     font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 10px;
+}
+
+/* -------------------- Mode button---------*/
+
+input#mode-checkbox{
+	display:none;
+}
+
+label#mode-button{
+    position: relative;
+}
+
+label#mode-button span{
+	cursor:pointer;
+    width: 38px;
+    height: 38px;
+    background: url(../images/light_mode_white_24dp.svg) no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+}
+
+input#mode-checkbox:checked + label#mode-button span{
+    background:url(../images/dark_mode_black_24dp.svg) no-repeat;
+    background-size: contain;
+    }
+
+/*----------------Light classes--------------*/
+
+.bgLight{
+    background-color: #eeeeee;
+}
+
+.bgLight2{
+    background-color: #bdbdbd;
+}
+
+.textLight{
+    color: #181719;
+}
+
+.borderLight{
+    border: solid #181719 1px;
 }
 
 /*---------------Media Queries--------------*/
@@ -222,7 +268,6 @@ ul{
         position:static;
         width:50vw;
         height: max-content;
-        background:#181719;
         transition: none;
     }
 
@@ -258,3 +303,4 @@ ul{
         margin: 19px auto;
     }
 }
+

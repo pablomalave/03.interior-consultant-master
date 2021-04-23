@@ -13,9 +13,13 @@
 <body>
     <header>
         <h2>This Interior</h2>
+        <div class="mode">
+            <input type="checkbox" id="mode-checkbox">
+            <label for="mode-checkbox" id="mode-button"><span></span></label>
+        </div>
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" id="mobile-button"><span></span></label>
-        <nav id="nav-buttons">
+        <nav id="nav-buttons" class="nav-color">
             <ul>
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Collection</a></li>
@@ -47,5 +51,6 @@
     <footer>
         Created by <a href="https://github.com/pablomalave">Pablo Malavé</a> - devChalenges.io
     </footer>
+    <script src="./JS/index.js"></script>
 </body>
 </html>
