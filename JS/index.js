@@ -1,10 +1,15 @@
-let Button = document.querySelector("input#mode-checkbox");
-Button.checked = false;
+let modeButton = document.querySelector("input#mode-checkbox");
+modeButton.checked = false;
 
-Button.addEventListener("change", ButtonChange);
+let menuButton = document.querySelector("input#menu-checkbox");
+menuButton.checked = false;
 
-function ButtonChange() {
-    if (Button.checked) {
+modeButton.addEventListener("change", modeButtonChange);
+
+menuButton.addEventListener("change", setMenuButton);
+
+function modeButtonChange() {
+    if (modeButton.checked) {
         lightMode();
     } else {
         darkMode();
@@ -30,6 +35,8 @@ function lightMode() {
     document.querySelector("footer").classList.add("textLight");
     //main a img
     document.querySelector("main a img").setAttribute("src","./images/trending_flat_black_24dp.svg");
+    //label#mobile-button span img
+    setMenuButton();
 }
 
 function darkMode() {
@@ -51,4 +58,23 @@ function darkMode() {
     document.querySelector("footer").classList.remove("textLight");
     //main a img
     document.querySelector("main a img").setAttribute("src","./images/trending_flat_white_24dp.svg");
+    //label#mobile-button span img
+    setMenuButton();
+}
+
+function setMenuButton() {
+    let color = "white";
+    let icon = "menu";
+
+    if (modeButton.checked) {
+        color = "black";
+    }
+
+    if (menuButton.checked) {
+        icon = "close";
+    }
+
+    let path = "./images/"+ icon +"_"+color+"_24dp.svg";
+
+    document.querySelector("label#mobile-button span img").setAttribute("src", path);
 }
