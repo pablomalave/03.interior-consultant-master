@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://03-interior-consultant-master.vercel.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/pablomalave/03.interior-consultant-master.git">
       Solution
     </a>
     <span> | </span>
@@ -53,6 +53,7 @@ Web page that shows a model of a room or some interior space of a house or offic
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
 - HTML, CSS, CSS Grid, CSS Flex.
+- JavaScript.
 - Mobile First Design.
 - Responsive Design.
 
