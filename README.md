@@ -36,13 +36,17 @@
 
 ## Overview
 
-![screenshot](./images/screenshot_dark.png)
+![screenshot](./images/desktop_dark.png)
+![screenshot](./images/mobile_dark.png)
 
 Web page that shows a model of a room or some interior space of a house or office.
 
 - The image of the design is accompanied by the name and photo of its author.
 - In the mobile size of the page, the horizontal navigation menu is replaced by a drop-down menu through a button.
-- The page has a light mode and a button to exchange it for the dark mode (under construction)
+- The page has a light mode and a button to exchange it for the dark mode.
+
+![screenshot](./images/desktop_light.png)
+![screenshot](./images/mobile_light.png)
 
 ### Built With
 
@@ -50,6 +54,7 @@ Web page that shows a model of a room or some interior space of a house or offic
 
 - HTML, CSS, CSS Grid, CSS Flex.
 - Mobile First Design.
+- Responsive Design.
 
 ## Features
 
